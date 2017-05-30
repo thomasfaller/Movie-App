@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Search WebApp</title>
+<!-- jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<!-- Axios -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- home script -->
+  <script src="js/script.js"></script>
+<!-- Bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- local CSS -->
+<link rel="stylesheet" href="css/main.css" class="css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">MovieInfo</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h3 class="text-center">Search for any movie!</h3>
+      <form action="" id="searchForm">
+        <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
+      </form>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row" id="movies">
+  </div>
+</div>
+
+
+
+</body>
+</html>
