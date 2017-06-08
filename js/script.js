@@ -1,11 +1,10 @@
-$(document).ready(()=>{
-  $('.field-wrap').on('submit','#searchForm', (e) => {
+
+  $(document).on('submit','#searchForm', (e) => {
+    $('.wrapper').empty();
     e.preventDefault();
     let $searchText = $('#searchText').val();
-    $('#movies').empty();
     getMovies($searchText);
   });
-});
 
 
 
@@ -13,7 +12,6 @@ function getMovies(search) {
   axios.get(
     'https://api.themoviedb.org/3/search/movie?api_key=c082d31257497077fd3ba0047bbd6358&query=' + search)
     .then((response) => {
-      console.log(response.data.results);
         for (var i = 0; i < response.data.results.length ; i++ ) {
 
           var $title = response.data.results[i].original_title;
