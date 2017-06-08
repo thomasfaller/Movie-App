@@ -1,9 +1,9 @@
 $(document).ready(()=>{
   $('.field-wrap').on('submit','#searchForm', (e) => {
+    e.preventDefault();
     let $searchText = $('#searchText').val();
     $('#movies').empty();
     getMovies($searchText);
-    e.preventDefault();
   });
 });
 
@@ -21,7 +21,7 @@ function getMovies(search) {
             if (response.data.results[i].poster_path == null) {
             $('.wrapper').append('<div class="cards" style="background-image: url(' + $noPoster + ')"><div class="hover_text"><h3>' + $title + '</h3><p>' + $description + '</p><button>More Info</button></div></div>')
               } else {
-              $(.wrapper).append('<div class="cards" style="background-image: url(' + $posterUrl + ')"><div class="hover_text"><h3>' + $title + '</h3><p>' + $description + '</p><button>More Info</button></div></div>')
+              $('.wrapper').append('<div class="cards" style="background-image: url(' + $posterUrl + ')"><div class="hover_text"><h3>' + $title + '</h3><p>' + $description + '</p><button>More Info</button></div></div>')
               }}
     })
     .catch((err) => {
