@@ -1,5 +1,42 @@
 body {
-  background:
-    url='https://static.pexels.com/photos/65128/pexels-photo-65128.jpeg';
-    
+  background: url(https://static.pexels.com/photos/65128/pexels-photo-65128.jpeg);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+#movies p {
+  text-align: center;
+}
+
+#movies div img {
+  border-radius: 5px;
+  border: solid .5px darkgrey;
+}
+
+.dvd_cover {
+  background-size: cover;
+}
+
+.img__wrap {
+  position: relative;
+}
+
+.hover_text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+#movies .col-4:hover .hover_text {
+  visibility: visible;
+  opacity: 1;
 }
