@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-  width: 60%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,8 @@ body {
   background-position: center;
   background-size: contain;
   margin: 1em 2em;
-  width: 220px;
-  height: 300px;
+  width: 1rem;
+  height: 1.364rem;
   border: solid;
   border-radius: 7px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -27,6 +27,7 @@ body {
 
 .hover_text {
   position: absolute;
+  overflow: scroll;
   top: 0;
   bottom: 0;
   left: 0;
