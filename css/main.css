@@ -14,9 +14,8 @@ body {
 
 .wrapper .cards {
   position: relative;
-
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   margin: 1em 2em;
   width: 330px;
   height: 450px;
@@ -64,4 +63,8 @@ body {
 .cards:hover .hover_text {
   visibility: visible;
   opacity: 1;
+}
+
+.hover_text h3, span, p {
+  margin-bottom: 1.25rem;
 }
